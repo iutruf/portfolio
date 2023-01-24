@@ -8,7 +8,10 @@ body {
   margin: 0 auto;
   max-width: 850px;
 }
-
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
 h1,
 h2,
 h3 {
@@ -103,8 +106,7 @@ p {
 }
 .container {
   padding: 0;
-  margin-left: 0;
-  margin-right: 0;
+  margin: 0 auto;
 }
 
 .col-md {
