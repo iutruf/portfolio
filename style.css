@@ -115,8 +115,11 @@ p {
   display: flex;
   flex-wrap: wrap;
 }
-@media (max-width: 768px) {
-  .col-md {
-    text-align: center;
+@media (max-width: 767.99px) {
+  .col-img {
+    text-align: center !important;
+  }
+  .container {
+    margin: 0 auto;
   }
 }
