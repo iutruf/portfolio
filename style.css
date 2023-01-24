@@ -5,7 +5,7 @@
 }
 
 body {
-  margin: 100px auto;
+  margin: 0 auto;
   max-width: 850px;
 }
 
@@ -103,6 +103,8 @@ p {
 }
 .container {
   padding: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .col-md {
@@ -119,9 +121,7 @@ p {
   .col-img {
     text-align: center !important;
   }
-  .container {
-    margin: 0 auto !important;
-  }
+
   h1 {
     font-size: 48px;
   }
