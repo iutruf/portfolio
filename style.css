@@ -2,13 +2,17 @@
   --primary-color: #6c63ff;
   --secondary-color: #f5f2fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  --main-text: #212529;
 }
 
 body {
   margin: 0 auto;
   max-width: 850px;
+  padding: 0;
+  color: var(--main-text);
 }
-.hero {
+.hero,
+.content {
   text-align: center;
   padding: 100px 20px;
 }
@@ -108,7 +112,6 @@ p {
   padding: 0;
   margin: 0 auto;
 }
-
 .col-md {
   vertical-align: middle;
   padding-left: 20px !important;
@@ -119,6 +122,33 @@ p {
   display: flex;
   flex-wrap: wrap;
 }
+
+nav {
+  padding: 20px 0;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 40 px;
+  margin-left: 15px;
+  font-size: 18px;
+  font-weight: 500;
+}
+nav a {
+  text-decoration: none;
+  color: var(--main-text);
+  opacity: 70%;
+  transition: all 100ms ease-in-out;
+}
+nav a:hover,
+nav li.active a {
+  color: var(--primary-color);
+}
+
 @media (max-width: 767.99px) {
   .col-img {
     text-align: center !important;
@@ -135,5 +165,15 @@ p {
   }
   p {
     font-size: 16px;
+  }
+  nav li {
+    font-size: 14px;
+  }
+  .work {
+    text-align: center;
+  }
+  .hero,
+  .content {
+    padding-top: 50px;
   }
 }
