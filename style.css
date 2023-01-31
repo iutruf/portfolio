@@ -87,9 +87,12 @@ p {
 }
 
 .email-link {
+  display: inline-block;
   margin: 0 20px;
   color: white;
   font-size: 18px;
+  line-height: 24px;
+  vertical-align: middle;
   text-decoration: none;
 }
 
@@ -154,7 +157,7 @@ nav li.active a {
 footer {
   margin-top: 40px;
   background: var(--primary-color);
-  padding: 15px 25px;
+  padding: 15px 20px;
   margin-left: 0;
   margin-right: 0;
 }
@@ -163,10 +166,10 @@ footer .social-links a {
   margin: 0 20px;
   color: white;
   transition: all 100ms ease-in-out;
-  font-size: 22px;
+  font-size: 24px;
 }
 footer .social-links a:hover {
-  font-size: 26px;
+  font-size: 28px;
 }
 
 @media (max-width: 767.99px) {
@@ -197,8 +200,11 @@ footer .social-links a:hover {
     padding-top: 50px;
   }
   footer {
-    margin-top: 18px;
+    margin-top: 20px;
     background: var(--primary-color);
     padding: 15px 0;
+  }
+  footer .social-links a:hover {
+    font-size: 24px;
   }
 }
