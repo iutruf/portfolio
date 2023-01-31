@@ -7,9 +7,14 @@
 
 body {
   margin: 0 auto;
-  max-width: 850px;
+
   padding: 0;
   color: var(--main-text);
+}
+.container {
+  max-width: 850px;
+  padding: 0;
+  margin: 0 auto;
 }
 .hero,
 .content {
@@ -107,10 +112,7 @@ p {
   margin-bottom: 20px;
   box-shadow: var(--box-shadow);
 }
-.container {
-  padding: 0 !important;
-  margin: 0 auto !important;
-}
+
 .col-md {
   vertical-align: middle;
   padding-left: 20px !important;
@@ -119,11 +121,13 @@ p {
 
 .row {
   display: flex;
-  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
 }
 
 nav {
-  padding: 20px 0;
+  padding: 20px;
 }
 nav ul {
   padding: 0;
@@ -151,7 +155,10 @@ footer {
   margin-top: 40px;
   background: var(--primary-color);
   padding: 15px 25px;
+  margin-left: 0;
+  margin-right: 0;
 }
+
 footer .social-links a {
   margin: 0 20px;
   color: white;
@@ -190,8 +197,8 @@ footer .social-links a:hover {
     padding-top: 50px;
   }
   footer {
-    margin-top: 16px;
+    margin-top: 18px;
     background: var(--primary-color);
-    padding: 10px 0;
+    padding: 15px 0;
   }
 }
