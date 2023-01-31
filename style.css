@@ -82,10 +82,9 @@ p {
 }
 
 .email-link {
-  display: flex;
-  justify-content: center;
-  color: var(--primary-color);
-  font-size: 28px;
+  margin: 0 20px;
+  color: white;
+  font-size: 18px;
   text-decoration: none;
 }
 
@@ -109,8 +108,8 @@ p {
   box-shadow: var(--box-shadow);
 }
 .container {
-  padding: 0;
-  margin: 0 auto;
+  padding: 0 !important;
+  margin: 0 auto !important;
 }
 .col-md {
   vertical-align: middle;
@@ -148,6 +147,20 @@ nav a:hover,
 nav li.active a {
   color: var(--primary-color);
 }
+footer {
+  margin-top: 40px;
+  background: var(--primary-color);
+  padding: 15px 25px;
+}
+footer .social-links a {
+  margin: 0 20px;
+  color: white;
+  transition: all 100ms ease-in-out;
+  font-size: 22px;
+}
+footer .social-links a:hover {
+  font-size: 26px;
+}
 
 @media (max-width: 767.99px) {
   .col-img {
@@ -175,5 +188,10 @@ nav li.active a {
   .hero,
   .content {
     padding-top: 50px;
+  }
+  footer {
+    margin-top: 16px;
+    background: var(--primary-color);
+    padding: 10px 0;
   }
 }
